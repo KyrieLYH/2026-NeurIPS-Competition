@@ -1,0 +1,134 @@
+[
+  {
+    "path": "source/scripts/finetune_current.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/finetune_current.py",
+    "bytes": 8462,
+    "sha256": "706e8902c384ea3bf115a4228b66f995ed761cdc0a1b32ff85c86e5d6fb6d410"
+  },
+  {
+    "path": "source/scripts/run_cal_v10.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/run_cal_v10.py",
+    "bytes": 12518,
+    "sha256": "8bd2adac014977fc3fd7dd8aefd3df4f10a6938a6918aa5d04938aee415d7c73"
+  },
+  {
+    "path": "source/scripts/check_v5.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/check_v5.py",
+    "bytes": 2995,
+    "sha256": "6abb5805ba307fb1b4649790b1ff284b3a85a7382da19c3d19343a9728c66e3a"
+  },
+  {
+    "path": "source/scripts/prepare_v9.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/prepare_v9.py",
+    "bytes": 4599,
+    "sha256": "cea8d07d710a5b629a9d11e6e8ed76ccafee2e33ac091a70f88428d8af111e10"
+  },
+  {
+    "path": "source/predai/__init__.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/__init__.py",
+    "bytes": 80,
+    "sha256": "0c0816e35d8bc89c6925cacc509b3ef9affaf53eead4e7c506dde63be2f291ad"
+  },
+  {
+    "path": "source/predai/features.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/features.py",
+    "bytes": 6469,
+    "sha256": "53e5f8be0572ad918617b9d0b5562cfe412b211215804eca9ac3c162f95b9cfd"
+  },
+  {
+    "path": "source/predai/ensemble_v2.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/ensemble_v2.py",
+    "bytes": 7548,
+    "sha256": "a7e3eca68a38c06519e608c569c57a61295665a9fdc258bcb00ba3e61993e684"
+  },
+  {
+    "path": "source/predai/adaptive_v3.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/adaptive_v3.py",
+    "bytes": 9472,
+    "sha256": "b6d7792c9e795f3d9a3ae1676b7066faec616b7b9562c584c0b4358a3f08d2d6"
+  },
+  {
+    "path": "source/predai/shared_v3.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/shared_v3.py",
+    "bytes": 2562,
+    "sha256": "a70936fbe52a57e07641354dc7c721b4ba5c8be8e16627bcd64520c4d3277d0b"
+  },
+  {
+    "path": "source/predai/calibrated_v10.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/calibrated_v10.py",
+    "bytes": 1304,
+    "sha256": "d11a44dc544a5b16e2106eab57786eace228c7756a23ed52acc270a0ace9887b"
+  },
+  {
+    "path": "source/predai/data_v2.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/data_v2.py",
+    "bytes": 5211,
+    "sha256": "ba088367a7d932704f172267f8a46294652418a22a112f43ae2f3a4a6d7e061e"
+  },
+  {
+    "path": "source/predai/paths.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/paths.py",
+    "bytes": 392,
+    "sha256": "95b1560df20114829b800a8af71651ff82e3b2f8c7afc0bfebce724bc1e1580d"
+  },
+  {
+    "path": "source/predai/tables.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/tables.py",
+    "bytes": 965,
+    "sha256": "1fd0fed936dd22884c56f12ed9838a6fcd226c061179d37b0b2abd8e7bbf5b1a"
+  },
+  {
+    "path": "source/predai/data.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/data.py",
+    "bytes": 4804,
+    "sha256": "13ed33f853b23a5c8f387389e376cc7435a4089d62f0a6e5ca7117675bb17f8d"
+  },
+  {
+    "path": "source/scripts/evaluate_v9.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/evaluate_v9.py",
+    "bytes": 9547,
+    "sha256": "5de21c51aa277307572c4c310137121c9798c516abff373642e8f98e795ad0bb"
+  },
+  {
+    "path": "source/scripts/improve_v3.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/improve_v3.py",
+    "bytes": 11515,
+    "sha256": "fce751f038377174003a6b27a5893807c467a0742ecd3568633a7001564cd92e"
+  },
+  {
+    "path": "source/scripts/run_reliable_v6.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/run_reliable_v6.py",
+    "bytes": 13181,
+    "sha256": "a033a46fa1fae0a9a233a6e78e6a7c1812898a9abf8a058a43c867a96656606c"
+  },
+  {
+    "path": "source/predai/portable_v9.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/portable_v9.py",
+    "bytes": 3350,
+    "sha256": "35c5ae6f37f78b07b9c1a3e1868bd54793995cca62bf35e472ecfa7d7e5daf45"
+  },
+  {
+    "path": "source/predai/reliable_v6.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/reliable_v6.py",
+    "bytes": 2136,
+    "sha256": "f7cd1cdcc462c13bd8cd13ffb2abf82e9efbdf4455e5d5e8dca6b7c21a1c5c7a"
+  },
+  {
+    "path": "source/predai/robust_v5.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/robust_v5.py",
+    "bytes": 5950,
+    "sha256": "8a802d5262d1a1125b49f6d8b9b557489cd817bf2bd17f19c869ba878c7bf515"
+  },
+  {
+    "path": "source/predai/compact_boost.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/predai/compact_boost.py",
+    "bytes": 8064,
+    "sha256": "15e5875c50152018a25373d2a3f0da1988c6a019bce117ca272443c0712a7eec"
+  },
+  {
+    "path": "source/scripts/export_shared_v3.py",
+    "origin": "/mnt/data_lyb/zhangtao/PAC/submission-20261014/scripts/export_shared_v3.py",
+    "bytes": 4074,
+    "sha256": "3acd027e7d5adf3a4963eae23ea6c648f1b882248c9b84726669ff10f5a2aee2"
+  }
+]
