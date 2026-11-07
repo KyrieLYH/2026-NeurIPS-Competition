@@ -1,0 +1,26 @@
+[
+  {
+    "module": "adaptive_v3.py",
+    "matches_collected_training_source": true
+  },
+  {
+    "module": "calibrated_v10.py",
+    "matches_collected_training_source": true
+  },
+  {
+    "module": "ensemble_v2.py",
+    "matches_collected_training_source": true
+  },
+  {
+    "module": "features.py",
+    "matches_collected_training_source": true
+  },
+  {
+    "module": "shared_v3.py",
+    "matches_collected_training_source": true
+  },
+  {
+    "module": "__init__.py",
+    "matches_collected_training_source": true
+  }
+]

@@ -1,0 +1,1884 @@
+{
+  "holdout": "none",
+  "recipe": "senior_v3_frozen_w0_beta2",
+  "training_benchmarks": [
+    "abstract_reason",
+    "advprompter",
+    "aegis",
+    "afrieval",
+    "agentic_review_perturbation",
+    "agi_elo",
+    "aider",
+    "algotune",
+    "appworld",
+    "auditing_sabotage_bench",
+    "autoresearchbench",
+    "averimatec",
+    "babilong",
+    "beavertails",
+    "bertaqa",
+    "bird_sql",
+    "brace",
+    "bridging_gap",
+    "causal_axioms",
+    "cellverse",
+    "ceval",
+    "chatgpt_drift",
+    "clasheval",
+    "cmmlu",
+    "confagents",
+    "critic_discernment_game",
+    "cruxeval",
+    "dave",
+    "dbpa",
+    "devbench",
+    "disco",
+    "editbench",
+    "edumath",
+    "egoschema",
+    "ehrflowbench",
+    "elicitation_game",
+    "emoji_attack",
+    "enginemt_qa",
+    "felm",
+    "fewshot_ttt_bbh",
+    "financebench",
+    "haiid",
+    "harmbench",
+    "healthadminbench",
+    "helm_afr",
+    "helm_bbq",
+    "helm_bold",
+    "helm_thaiexam",
+    "icpc2_code_selector",
+    "igakuqa",
+    "igakuqa119",
+    "ikp",
+    "jailbreakbench",
+    "judgetuning",
+    "kormedmcqa",
+    "legal_rag_bench",
+    "legalbench",
+    "lingoly",
+    "live_agent_risk",
+    "liveaopsbench",
+    "llm_bp_tag",
+    "llm_uncertainty_bench",
+    "mathconstraint",
+    "medhelm_ehr_sql",
+    "medhelm_head_qa",
+    "medhelm_med_mcqa",
+    "medhelm_med_qa",
+    "medhelm_medbullets",
+    "medhelm_medcalc_bench",
+    "medhelm_medec",
+    "medhelm_medhallu",
+    "medhelm_pubmed_qa",
+    "medhelm_race_based_med",
+    "mind2web",
+    "mmlu",
+    "mmoral_bench",
+    "monkey_power_laws",
+    "multi_swebench",
+    "mypcbench",
+    "naep_llm_students",
+    "nester",
+    "ood_prediction",
+    "pku_saferlhf",
+    "planbench",
+    "preference_dissection",
+    "proofaug",
+    "prox",
+    "real_webagents",
+    "researchcodebench",
+    "revolve",
+    "safeagentbench",
+    "software_world_models",
+    "sugarcrepe",
+    "swe_rebench",
+    "swe_smith",
+    "tensortrust",
+    "truthfulqa_mc",
+    "tulu_human_eval",
+    "visual_riddles",
+    "visualwebarena",
+    "weavebench",
+    "wikihow_agent",
+    "wmt_mqm",
+    "workarena",
+    "workbench_revisited"
+  ],
+  "train_rows": 150000,
+  "config": {
+    "boost_weight": 0.0,
+    "method": "beta",
+    "tau": 2.0,
+    "retain": 0.5
+  },
+  "selection": "w0_beta2",
+  "selection_source": "submission_v3_shared_20261014 development selection; not retuned",
+  "final_rows_cap": 150000,
+  "snapshot_audit": [
+    {
+      "benchmark": "matharena",
+      "response_rows": 92944,
+      "invalid_labels": 0,
+      "nonbinary_labels": 83,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmdocrag",
+      "response_rows": 342695,
+      "invalid_labels": 129,
+      "nonbinary_labels": 326277,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "multi_swebench",
+      "response_rows": 57975,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 57975
+    },
+    {
+      "benchmark": "real_webagents",
+      "response_rows": 4449,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4449
+    },
+    {
+      "benchmark": "researchcodebench",
+      "response_rows": 6784,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 6784
+    },
+    {
+      "benchmark": "swe_rebench",
+      "response_rows": 67074,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 67074
+    },
+    {
+      "benchmark": "abstract_reason",
+      "response_rows": 9095,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 9095
+    },
+    {
+      "benchmark": "adaptivestep",
+      "response_rows": 988160,
+      "invalid_labels": 56832,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "advprompter",
+      "response_rows": 100,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 100
+    },
+    {
+      "benchmark": "aegis",
+      "response_rows": 11608,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 11608
+    },
+    {
+      "benchmark": "afrieval",
+      "response_rows": 1403380,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 1403380
+    },
+    {
+      "benchmark": "afrimedqa",
+      "response_rows": 302354,
+      "invalid_labels": 21000,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "agc_bench",
+      "response_rows": 449942,
+      "invalid_labels": 301361,
+      "nonbinary_labels": 40736,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "agentdojo",
+      "response_rows": 69798,
+      "invalid_labels": 2,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "agentic_review_perturbation",
+      "response_rows": 315,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 315
+    },
+    {
+      "benchmark": "agi_elo",
+      "response_rows": 277106,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 277106
+    },
+    {
+      "benchmark": "ai2d_test",
+      "response_rows": 784352,
+      "invalid_labels": 258,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "aider",
+      "response_rows": 5356,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 5356
+    },
+    {
+      "benchmark": "algotune",
+      "response_rows": 2772,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2772
+    },
+    {
+      "benchmark": "alignment_faking",
+      "response_rows": 2138969,
+      "invalid_labels": 45120,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "alpacaeval",
+      "response_rows": 177892,
+      "invalid_labels": 6,
+      "nonbinary_labels": 177849,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "alpha_sql",
+      "response_rows": 1534,
+      "invalid_labels": 1,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "annotating_errors_wcf",
+      "response_rows": 15344,
+      "invalid_labels": 1884,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "appworld",
+      "response_rows": 10530,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 10530
+    },
+    {
+      "benchmark": "arcagi",
+      "response_rows": 35260,
+      "invalid_labels": 24,
+      "nonbinary_labels": 549,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "atmossci_bench",
+      "response_rows": 37421,
+      "invalid_labels": 492,
+      "nonbinary_labels": 589,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "auditing_sabotage_bench",
+      "response_rows": 1869,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 1869
+    },
+    {
+      "benchmark": "autoresearchbench",
+      "response_rows": 115,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 115
+    },
+    {
+      "benchmark": "averimatec",
+      "response_rows": 152,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 152
+    },
+    {
+      "benchmark": "babilong",
+      "response_rows": 2020951,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2020951
+    },
+    {
+      "benchmark": "bbq",
+      "response_rows": 380198,
+      "invalid_labels": 109,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "beavertails",
+      "response_rows": 1680,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 1680
+    },
+    {
+      "benchmark": "bedd_basalt",
+      "response_rows": 50951,
+      "invalid_labels": 4583,
+      "nonbinary_labels": 16133,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "benger",
+      "response_rows": 9328,
+      "invalid_labels": 26,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "bertaqa",
+      "response_rows": 57072,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 57072
+    },
+    {
+      "benchmark": "bigfinancebench",
+      "excluded": "upstream evaluation-only / do-not-train"
+    },
+    {
+      "benchmark": "biggen",
+      "response_rows": 979855,
+      "invalid_labels": 818708,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "bird_sql",
+      "response_rows": 43200,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 43200
+    },
+    {
+      "benchmark": "brace",
+      "response_rows": 202096,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 202096
+    },
+    {
+      "benchmark": "bridging_gap",
+      "response_rows": 4706881,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4706881
+    },
+    {
+      "benchmark": "care_enzymes",
+      "response_rows": 16817,
+      "invalid_labels": 0,
+      "nonbinary_labels": 315,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "causal_axioms",
+      "response_rows": 9000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 9000
+    },
+    {
+      "benchmark": "cellverse",
+      "response_rows": 748,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 748
+    },
+    {
+      "benchmark": "ceobench",
+      "response_rows": 162,
+      "invalid_labels": 26,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "ceval",
+      "response_rows": 14806,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 14806
+    },
+    {
+      "benchmark": "chartmuseum",
+      "response_rows": 162,
+      "invalid_labels": 162,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "chatgpt_drift",
+      "response_rows": 46832,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 46832
+    },
+    {
+      "benchmark": "chi_bench",
+      "response_rows": 7700,
+      "invalid_labels": 33,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "chipbench",
+      "response_rows": 1470,
+      "invalid_labels": 1190,
+      "nonbinary_labels": 280,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "clasheval",
+      "response_rows": 75216,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 75216
+    },
+    {
+      "benchmark": "classroom_ai",
+      "response_rows": 10360,
+      "invalid_labels": 9813,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "cmmlu",
+      "response_rows": 254804,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 254804
+    },
+    {
+      "benchmark": "coffeebench",
+      "response_rows": 21,
+      "invalid_labels": 21,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "complexbench",
+      "response_rows": 17250,
+      "invalid_labels": 17250,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "confagents",
+      "response_rows": 64,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 64
+    },
+    {
+      "benchmark": "corebench",
+      "response_rows": 1956,
+      "invalid_labels": 0,
+      "nonbinary_labels": 140,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "critic_discernment_game",
+      "response_rows": 7276,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7276
+    },
+    {
+      "benchmark": "crow",
+      "response_rows": 5900,
+      "invalid_labels": 924,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "cruxeval",
+      "response_rows": 992000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 992000
+    },
+    {
+      "benchmark": "csedb",
+      "response_rows": 41922,
+      "invalid_labels": 11,
+      "nonbinary_labels": 9515,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "cseo_bench",
+      "response_rows": 259128,
+      "invalid_labels": 73980,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "das_med_hallucination",
+      "response_rows": 1965,
+      "invalid_labels": 47,
+      "nonbinary_labels": 99,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "data_juicer2",
+      "response_rows": 22,
+      "invalid_labels": 22,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "dataclawbench",
+      "response_rows": 3936,
+      "invalid_labels": 0,
+      "nonbinary_labels": 154,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "dave",
+      "response_rows": 19248,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 19248
+    },
+    {
+      "benchmark": "dbpa",
+      "response_rows": 409,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 409
+    },
+    {
+      "benchmark": "decodingtrust",
+      "response_rows": 2456958,
+      "invalid_labels": 974533,
+      "nonbinary_labels": 316,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "decompile_bench",
+      "response_rows": 141131,
+      "invalid_labels": 0,
+      "nonbinary_labels": 141131,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "devbench",
+      "response_rows": 5149,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 5149
+    },
+    {
+      "benchmark": "disco",
+      "response_rows": 111906,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 111906
+    },
+    {
+      "benchmark": "donotanswer",
+      "response_rows": 11268,
+      "invalid_labels": 2654,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "doris_mae",
+      "response_rows": 165144,
+      "invalid_labels": 19320,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "dpai",
+      "response_rows": 4590,
+      "invalid_labels": 3399,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "dqvis",
+      "response_rows": 357,
+      "invalid_labels": 271,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "editbench",
+      "response_rows": 23328,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 23328
+    },
+    {
+      "benchmark": "edu_circuit_hw",
+      "response_rows": 3078,
+      "invalid_labels": 192,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "eduguardbench",
+      "response_rows": 189873,
+      "invalid_labels": 4047,
+      "nonbinary_labels": 3174,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "edumath",
+      "response_rows": 16720,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 16720
+    },
+    {
+      "benchmark": "egoschema",
+      "response_rows": 5500,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 5500
+    },
+    {
+      "benchmark": "ehrflowbench",
+      "response_rows": 140,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 140
+    },
+    {
+      "benchmark": "elicitation_game",
+      "response_rows": 14070,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 14070
+    },
+    {
+      "benchmark": "embodied_agent_interface",
+      "response_rows": 2500,
+      "invalid_labels": 2500,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "emoji_attack",
+      "response_rows": 58860,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 58860
+    },
+    {
+      "benchmark": "engdesign",
+      "response_rows": 5394,
+      "invalid_labels": 1,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "engibench",
+      "response_rows": 18,
+      "invalid_labels": 16,
+      "nonbinary_labels": 2,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "enginemt_qa",
+      "response_rows": 676,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 676
+    },
+    {
+      "benchmark": "evouna",
+      "response_rows": 27548,
+      "invalid_labels": 2189,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "faithcot",
+      "response_rows": 2728,
+      "invalid_labels": 209,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "felm",
+      "response_rows": 4426,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4426
+    },
+    {
+      "benchmark": "fetv",
+      "response_rows": 41576,
+      "invalid_labels": 28129,
+      "nonbinary_labels": 9579,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "fewshot_ttt_bbh",
+      "response_rows": 7425,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7425
+    },
+    {
+      "benchmark": "fgbench",
+      "response_rows": 57168,
+      "invalid_labels": 7571,
+      "nonbinary_labels": 4012,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "financebench",
+      "response_rows": 2400,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2400
+    },
+    {
+      "benchmark": "find_interp",
+      "response_rows": 10397,
+      "invalid_labels": 10177,
+      "nonbinary_labels": 127,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "finegrain_t2i",
+      "response_rows": 12861,
+      "invalid_labels": 9111,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "frontieror",
+      "response_rows": 2230,
+      "invalid_labels": 0,
+      "nonbinary_labels": 362,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "genai_learning",
+      "response_rows": 29013,
+      "invalid_labels": 0,
+      "nonbinary_labels": 5312,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "ghosts_math",
+      "response_rows": 1066,
+      "invalid_labels": 1053,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "goodai_ltm_benchmark",
+      "response_rows": 3507,
+      "invalid_labels": 292,
+      "nonbinary_labels": 383,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "haiid",
+      "response_rows": 71364,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 71364
+    },
+    {
+      "benchmark": "hallusionbench",
+      "response_rows": 240857,
+      "invalid_labels": 1382,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "harmbench",
+      "response_rows": 107274,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 107274
+    },
+    {
+      "benchmark": "healthadminbench",
+      "response_rows": 7020,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7020
+    },
+    {
+      "benchmark": "helm_afr",
+      "response_rows": 745360,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 745360
+    },
+    {
+      "benchmark": "helm_airbench",
+      "response_rows": 375804,
+      "invalid_labels": 0,
+      "nonbinary_labels": 24918,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_anthropic_redteam",
+      "response_rows": 81000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 3463,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_bbq",
+      "response_rows": 81000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 81000
+    },
+    {
+      "benchmark": "helm_bold",
+      "response_rows": 42000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 42000
+    },
+    {
+      "benchmark": "helm_cleva",
+      "response_rows": 28724,
+      "invalid_labels": 2212,
+      "nonbinary_labels": 2198,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_harmbench",
+      "response_rows": 32400,
+      "invalid_labels": 0,
+      "nonbinary_labels": 6298,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_real_toxicity_prompts",
+      "response_rows": 42000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 3902,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_simple_safety_tests",
+      "response_rows": 8100,
+      "invalid_labels": 0,
+      "nonbinary_labels": 199,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "helm_thaiexam",
+      "response_rows": 23730,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 23730
+    },
+    {
+      "benchmark": "helm_xstest",
+      "response_rows": 36450,
+      "invalid_labels": 0,
+      "nonbinary_labels": 2233,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "hivmedqa",
+      "response_rows": 52900,
+      "invalid_labels": 50973,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "hle",
+      "response_rows": 14588,
+      "invalid_labels": 811,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "icpc2_code_selector",
+      "response_rows": 70905,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 70905
+    },
+    {
+      "benchmark": "igakuqa",
+      "response_rows": 7355,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7355
+    },
+    {
+      "benchmark": "igakuqa119",
+      "response_rows": 400,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 400
+    },
+    {
+      "benchmark": "ikp",
+      "response_rows": 268351,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 268351
+    },
+    {
+      "benchmark": "image2struct",
+      "response_rows": 142968,
+      "invalid_labels": 103,
+      "nonbinary_labels": 57756,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "imgedit",
+      "response_rows": 737,
+      "invalid_labels": 683,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "indeterminacy",
+      "response_rows": 386240,
+      "invalid_labels": 45097,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "ineqmath",
+      "response_rows": 1000,
+      "invalid_labels": 1000,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "infibench",
+      "response_rows": 699042,
+      "invalid_labels": 57,
+      "nonbinary_labels": 108082,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "interchangeable_token_embeddings",
+      "response_rows": 399956,
+      "invalid_labels": 225,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "intercode",
+      "response_rows": 17740,
+      "invalid_labels": 2,
+      "nonbinary_labels": 1697,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "jailbreakbench",
+      "response_rows": 3074,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 3074
+    },
+    {
+      "benchmark": "jetts",
+      "response_rows": 328685,
+      "invalid_labels": 0,
+      "nonbinary_labels": 31980,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "judgetuning",
+      "response_rows": 21000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 21000
+    },
+    {
+      "benchmark": "katakomba",
+      "response_rows": 28600,
+      "invalid_labels": 1,
+      "nonbinary_labels": 21295,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "kernelbench",
+      "response_rows": 73998,
+      "invalid_labels": 14,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "kmmlu",
+      "response_rows": 1012300,
+      "invalid_labels": 5070,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "kormedmcqa",
+      "response_rows": 21391,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 21391
+    },
+    {
+      "benchmark": "kris_bench",
+      "response_rows": 130192,
+      "invalid_labels": 93220,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "lambda_fp_course",
+      "response_rows": 6798,
+      "invalid_labels": 4000,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "lawbench",
+      "response_rows": 918000,
+      "invalid_labels": 52774,
+      "nonbinary_labels": 328987,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "legal_rag_bench",
+      "response_rows": 1800,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 1800
+    },
+    {
+      "benchmark": "legalbench",
+      "response_rows": 63457,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 63457
+    },
+    {
+      "benchmark": "lexeval",
+      "response_rows": 1076280,
+      "invalid_labels": 0,
+      "nonbinary_labels": 175463,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "lingoly",
+      "response_rows": 24926,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 24926
+    },
+    {
+      "benchmark": "live_agent_risk",
+      "response_rows": 256,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 256
+    },
+    {
+      "benchmark": "liveaopsbench",
+      "response_rows": 69264,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 69264
+    },
+    {
+      "benchmark": "livebench",
+      "response_rows": 165334,
+      "invalid_labels": 0,
+      "nonbinary_labels": 28289,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "llm4ir",
+      "response_rows": 5348,
+      "invalid_labels": 1106,
+      "nonbinary_labels": 1860,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "llm_bp_tag",
+      "response_rows": 158596,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 158596
+    },
+    {
+      "benchmark": "llm_survey_simulation",
+      "response_rows": 669350,
+      "invalid_labels": 136433,
+      "nonbinary_labels": 211226,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "llm_uncertainty_bench",
+      "response_rows": 5100000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 5100000
+    },
+    {
+      "benchmark": "llmail_inject",
+      "response_rows": 461593,
+      "invalid_labels": 577,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "llms_lean_formalization",
+      "response_rows": 64960,
+      "invalid_labels": 868,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "lohi_drug_discovery",
+      "response_rows": 1246925,
+      "invalid_labels": 1246925,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "matharena_platform",
+      "response_rows": 32503,
+      "invalid_labels": 0,
+      "nonbinary_labels": 756,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mathconstraint",
+      "response_rows": 11862,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 11862
+    },
+    {
+      "benchmark": "mathvista_mini",
+      "response_rows": 285000,
+      "invalid_labels": 16180,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "medhelm_ehr_sql",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_head_qa",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_med_mcqa",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_med_qa",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_medbullets",
+      "response_rows": 4004,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4004
+    },
+    {
+      "benchmark": "medhelm_medcalc_bench",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_medec",
+      "response_rows": 7761,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7761
+    },
+    {
+      "benchmark": "medhelm_medhallu",
+      "response_rows": 13000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 13000
+    },
+    {
+      "benchmark": "medhelm_pubmed_qa",
+      "response_rows": 11000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 11000
+    },
+    {
+      "benchmark": "medhelm_race_based_med",
+      "response_rows": 2171,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2171
+    },
+    {
+      "benchmark": "medwatermark_fws",
+      "response_rows": 24200,
+      "invalid_labels": 20406,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mind2web",
+      "response_rows": 17153,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 17153
+    },
+    {
+      "benchmark": "mj_bench",
+      "response_rows": 209509,
+      "invalid_labels": 106650,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mlip_arena",
+      "response_rows": 122640,
+      "invalid_labels": 43964,
+      "nonbinary_labels": 27412,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mlrbench",
+      "response_rows": 31356,
+      "invalid_labels": 31356,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmbench_v11",
+      "response_rows": 3262900,
+      "invalid_labels": 147009,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmedbench",
+      "response_rows": 300,
+      "invalid_labels": 300,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmlu",
+      "response_rows": 2106300,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2106300
+    },
+    {
+      "benchmark": "mmlupro",
+      "response_rows": 575807,
+      "invalid_labels": 39517,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmmu_dev_val",
+      "response_rows": 265650,
+      "invalid_labels": 265650,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mmoral_bench",
+      "response_rows": 28679,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 28679
+    },
+    {
+      "benchmark": "mochi",
+      "response_rows": 48456,
+      "invalid_labels": 19448,
+      "nonbinary_labels": 22431,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "moe_cap",
+      "response_rows": 65238,
+      "invalid_labels": 7150,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "monkey_power_laws",
+      "response_rows": 28780000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 28780000
+    },
+    {
+      "benchmark": "morphkv",
+      "response_rows": 4105,
+      "invalid_labels": 431,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mtbbench",
+      "response_rows": 8412,
+      "invalid_labels": 15,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "multi_moe",
+      "response_rows": 9620,
+      "invalid_labels": 560,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "multimodal_stem_ai",
+      "response_rows": 4335,
+      "invalid_labels": 0,
+      "nonbinary_labels": 476,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "mypcbench",
+      "response_rows": 118,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 118
+    },
+    {
+      "benchmark": "naep_llm_students",
+      "response_rows": 53680,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 53680
+    },
+    {
+      "benchmark": "nanobaselib",
+      "response_rows": 319289,
+      "invalid_labels": 319289,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "naturalreasoning",
+      "response_rows": 1145824,
+      "invalid_labels": 1145824,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "nester",
+      "response_rows": 1128,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 1128
+    },
+    {
+      "benchmark": "nis3d",
+      "response_rows": 180,
+      "invalid_labels": 0,
+      "nonbinary_labels": 179,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "oasst",
+      "response_rows": 7575,
+      "invalid_labels": 6375,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "ocrbench_v2",
+      "response_rows": 10000,
+      "invalid_labels": 10000,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "ood_prediction",
+      "response_rows": 142805,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 142805
+    },
+    {
+      "benchmark": "openbiorq",
+      "response_rows": 7227,
+      "invalid_labels": 14,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "perumedqa",
+      "response_rows": 92180,
+      "invalid_labels": 7073,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "phyblock",
+      "response_rows": 9524,
+      "invalid_labels": 0,
+      "nonbinary_labels": 7320,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "pku_saferlhf",
+      "response_rows": 164236,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 164236
+    },
+    {
+      "benchmark": "planbench",
+      "response_rows": 38061,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 38061
+    },
+    {
+      "benchmark": "preference_dissection",
+      "response_rows": 167680,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 167680
+    },
+    {
+      "benchmark": "prism",
+      "response_rows": 136742,
+      "invalid_labels": 64788,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "prm800k",
+      "response_rows": 1701771,
+      "invalid_labels": 917552,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "proofaug",
+      "response_rows": 244,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 244
+    },
+    {
+      "benchmark": "proteininvbench",
+      "response_rows": 23872,
+      "invalid_labels": 0,
+      "nonbinary_labels": 23872,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "prox",
+      "response_rows": 24298,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 24298
+    },
+    {
+      "benchmark": "psychosis_bench",
+      "response_rows": 2688,
+      "invalid_labels": 589,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "putnam_axiom",
+      "response_rows": 5000,
+      "invalid_labels": 0,
+      "nonbinary_labels": 1219,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "qatch",
+      "response_rows": 61384,
+      "invalid_labels": 3,
+      "nonbinary_labels": 12894,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "rakuda",
+      "response_rows": 64360,
+      "invalid_labels": 62577,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "rclicks",
+      "response_rows": 251820,
+      "invalid_labels": 51757,
+      "nonbinary_labels": 185499,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "real_pocqi",
+      "response_rows": 11560,
+      "invalid_labels": 0,
+      "nonbinary_labels": 3298,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "reasoning_gym",
+      "response_rows": 186250,
+      "invalid_labels": 145,
+      "nonbinary_labels": 28072,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "refgrader",
+      "response_rows": 6046,
+      "invalid_labels": 4552,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "researchclawbench",
+      "response_rows": 1432,
+      "invalid_labels": 1323,
+      "nonbinary_labels": 36,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "revolve",
+      "response_rows": 3100,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 3100
+    },
+    {
+      "benchmark": "rewardbench",
+      "response_rows": 491343,
+      "invalid_labels": 0,
+      "nonbinary_labels": 4154,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "risebench",
+      "response_rows": 8280,
+      "invalid_labels": 9,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "safeagentbench",
+      "response_rows": 4500,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4500
+    },
+    {
+      "benchmark": "scale_mrt",
+      "response_rows": 51491,
+      "invalid_labels": 37231,
+      "nonbinary_labels": 519,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "sciarena",
+      "response_rows": 26408,
+      "invalid_labels": 0,
+      "nonbinary_labels": 1842,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "scigym",
+      "response_rows": 5754,
+      "invalid_labels": 822,
+      "nonbinary_labels": 2128,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "sib200",
+      "response_rows": 765204,
+      "invalid_labels": 83640,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "software_world_models",
+      "response_rows": 7830,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 7830
+    },
+    {
+      "benchmark": "stanford_orb",
+      "response_rows": 5670,
+      "invalid_labels": 1815,
+      "nonbinary_labels": 3842,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "statqa",
+      "response_rows": 53498,
+      "invalid_labels": 9304,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "subjective_qa",
+      "response_rows": 16168,
+      "invalid_labels": 4,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "sugarcrepe",
+      "response_rows": 15024,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 15024
+    },
+    {
+      "benchmark": "sustainable_food",
+      "response_rows": 3000,
+      "invalid_labels": 1,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "svrpbench",
+      "response_rows": 160,
+      "invalid_labels": 40,
+      "nonbinary_labels": 60,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "swe_smith",
+      "response_rows": 49897,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 49897
+    },
+    {
+      "benchmark": "swepolybench",
+      "response_rows": 1871,
+      "invalid_labels": 1,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "synthpai",
+      "response_rows": 12578,
+      "invalid_labels": 658,
+      "nonbinary_labels": 700,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "tau2_bench",
+      "response_rows": 23342,
+      "invalid_labels": 132,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "taubench",
+      "response_rows": 4330,
+      "invalid_labels": 16,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "tengu",
+      "response_rows": 192575,
+      "invalid_labels": 167989,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "tensortrust",
+      "response_rows": 681726,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 681726
+    },
+    {
+      "benchmark": "theagentcompany",
+      "response_rows": 3057,
+      "invalid_labels": 1,
+      "nonbinary_labels": 1186,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "threeeed",
+      "response_rows": 17232,
+      "invalid_labels": 0,
+      "nonbinary_labels": 13360,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "truthfulqa_mc",
+      "response_rows": 122550,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 122550
+    },
+    {
+      "benchmark": "tulu_human_eval",
+      "response_rows": 2300,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 2300
+    },
+    {
+      "benchmark": "tumlu",
+      "response_rows": 143316,
+      "invalid_labels": 5928,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "vhelm",
+      "response_rows": 931478,
+      "invalid_labels": 47822,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "visit_bench",
+      "response_rows": 71406,
+      "invalid_labels": 0,
+      "nonbinary_labels": 9860,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "visual_riddles",
+      "response_rows": 3186,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 3186
+    },
+    {
+      "benchmark": "visualwebarena",
+      "response_rows": 600,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 600
+    },
+    {
+      "benchmark": "vl_rewardbench",
+      "response_rows": 111452,
+      "invalid_labels": 5755,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "weavebench",
+      "response_rows": 114,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 114
+    },
+    {
+      "benchmark": "wikihow_agent",
+      "response_rows": 171412,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 171412
+    },
+    {
+      "benchmark": "wildvision",
+      "response_rows": 11000,
+      "invalid_labels": 26,
+      "nonbinary_labels": 6277,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "wmt_mqm",
+      "response_rows": 4879368,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 4879368
+    },
+    {
+      "benchmark": "wonderbread",
+      "response_rows": 21231,
+      "invalid_labels": 1009,
+      "nonbinary_labels": 4290,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "workarena",
+      "response_rows": 475,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 475
+    },
+    {
+      "benchmark": "workbench_revisited",
+      "response_rows": 16560,
+      "invalid_labels": 0,
+      "nonbinary_labels": 0,
+      "used_candidate_rows": 16560
+    },
+    {
+      "benchmark": "worldcentralbanks",
+      "response_rows": 405600,
+      "invalid_labels": 42,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    },
+    {
+      "benchmark": "xstest",
+      "response_rows": 11250,
+      "invalid_labels": 5343,
+      "nonbinary_labels": 0,
+      "excluded": "fractional or non-probability response scale"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"status": "PASS", "checks": ["isolated ZIP loading", "6 label budgets", "determinism", "no input mutation", "benchmark isolation", "benchmark ID not a feature", "long-text preprocessing parity", "JSON attributes", "label adaptation", "missing fields"], "100_call_seconds": 6.763198273954913}

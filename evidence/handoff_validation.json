@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "scope": "New handoff entrypoints and repacked inference; no 150k base retraining or full historical search",
+  "tests": [
+    {
+      "args": [
+        "tools/verify_bundle.py"
+      ],
+      "status": "PASS",
+      "stdout": "{\"status\": \"PASS\", \"manifest_files\": 65, \"runtime_members_identical\": true}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "tools/fit_selected_calibration.py"
+      ],
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"parameters\": {\n    \"a\": 1.0,\n    \"b\": -0.5796672067792444,\n    \"loss\": 0.23375083370787164,\n    \"meta_episodes\": 758\n  },\n  \"public_benchmarks\": 47,\n  \"warning\": \"Refit training objective, not independent test performance. Original five/fresh six are included in final refit.\"\n}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "tools/package_submission.py"
+      ],
+      "status": "PASS",
+      "stdout": "{\n  \"archive\": \"/mnt/data_lyb/zhangtao/PAC/outputs/v10-handoff-review-y2gr69yw/V10_1020550_code_bundle/outputs/submission_v10_repacked.zip\",\n  \"bytes\": 3467137,\n  \"sha256\": \"05a254d63c0517a4d4be366c448e21b7e2cc32c708b6e44de30fe8af4ba85489\",\n  \"same_member_bytes_as_original\": true,\n  \"changed_members\": [],\n  \"note\": \"Archive timestamps/compression can differ. Original submitted artifact is in original_submission/.\"\n}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "tools/check_submission.py",
+        "outputs/submission_v10_repacked.zip"
+      ],
+      "status": "PASS",
+      "stdout": "{\"status\": \"PASS\", \"checks\": [\"isolated ZIP loading\", \"6 label budgets\", \"determinism\", \"no input mutation\", \"benchmark isolation\", \"benchmark ID not a feature\", \"long-text preprocessing parity\", \"JSON attributes\", \"label adaptation\", \"missing fields\"], \"100_call_seconds\": 6.984505305998027}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "tools/train_selected_base.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout": "usage: train_selected_base.py [-h] [--raw-data RAW_DATA]\n                              [--sample-in SAMPLE_IN]\n                              [--sample-out SAMPLE_OUT] --output-dir\n                              OUTPUT_DIR [--threads THREADS]\n\nConvenience entry for the chosen 150k full-public base recipe. Uses historical\ndata/sampling/features unchanged. Requires the original public Measurement\nData Bank snapshot, which is NOT bundled. Not executed for this handoff; exact\nweight regeneration depends on the dataset/order/environment.\n\noptions:\n  -h, --help            show this help message and exit\n  --raw-data RAW_DATA   Public measurement-db root; reads tables, never traces\n  --sample-in SAMPLE_IN\n                        Previously saved FINAL 150k feature-attached sample,\n                        if available\n  --sample-out SAMPLE_OUT\n                        Optionally persist the selected sample for future\n                        replay\n  --output-dir OUTPUT_DIR\n                        NEW directory only\n  --threads THREADS",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "-c",
+        "import sys;sys.path.insert(0,'source');import scripts.run_cal_v10;print('historical import closure PASS')"
+      ],
+      "status": "PASS",
+      "stdout": "historical import closure PASS",
+      "stderr": ""
+    }
+  ],
+  "tested_manifest_sha256": "a2d5cde14c4f4655c143f8a5db804bf8db6dd85edd188801db96ec2c9eeecfc0"
+}

@@ -1,0 +1,14 @@
+{
+  "base_train_rows": 123060,
+  "development_episodes": 698,
+  "development_benchmarks": 41,
+  "confirmation_episodes": 60,
+  "confirmation_counts": {
+    "ceval": 11,
+    "mathconstraint": 12,
+    "jailbreakbench": 10,
+    "helm_bold": 12,
+    "swe_smith": 3,
+    "medhelm_med_qa": 12
+  }
+}

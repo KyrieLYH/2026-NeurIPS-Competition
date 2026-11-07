@@ -1,0 +1,276 @@
+{
+  "scope": "Onlysubmission1020550 /V10calibrated; not a completedNeurIPSmanuscript or independent fulltrainingreproduction package.",
+  "selected_submission_id": 1020550,
+  "selected_score": 0.139514,
+  "archive": {
+    "name": "submission_v10_calibrated.zip",
+    "bytes": 3467137,
+    "sha256_local_and_server_verified": "4d1d1ada9d9e6ac74b39676e6c75647f6bc5136a299b09a62839e12e814c53af",
+    "files": [
+      "model.py",
+      "artifacts/ensemble.joblib",
+      "artifacts/training.json",
+      "predai/__init__.py",
+      "predai/features.py",
+      "predai/ensemble_v2.py",
+      "predai/adaptive_v3.py",
+      "predai/shared_v3.py",
+      "predai/calibrated_v10.py",
+      "requirements.txt"
+    ]
+  },
+  "calibration": {
+    "spec": {
+      "kind": "intercept",
+      "regularization": 0.001,
+      "cold_only": false
+    },
+    "parameters": {
+      "a": 1.0,
+      "b": -0.5796672067792444,
+      "loss": 0.23375083370787164,
+      "meta_episodes": 758
+    },
+    "base": "Original V3 full-public 150k fit, reused unchanged",
+    "calibration": "Refit global calibration on all available out-of-benchmark predictions after confirmation, including original five and fresh six."
+  },
+  "base_training": {
+    "benchmarks": [
+      "abstract_reason",
+      "advprompter",
+      "aegis",
+      "afrieval",
+      "agentic_review_perturbation",
+      "agi_elo",
+      "aider",
+      "algotune",
+      "appworld",
+      "auditing_sabotage_bench",
+      "autoresearchbench",
+      "averimatec",
+      "babilong",
+      "beavertails",
+      "bertaqa",
+      "bird_sql",
+      "brace",
+      "bridging_gap",
+      "causal_axioms",
+      "cellverse",
+      "ceval",
+      "chatgpt_drift",
+      "clasheval",
+      "cmmlu",
+      "confagents",
+      "critic_discernment_game",
+      "cruxeval",
+      "dave",
+      "dbpa",
+      "devbench",
+      "disco",
+      "editbench",
+      "edumath",
+      "egoschema",
+      "ehrflowbench",
+      "elicitation_game",
+      "emoji_attack",
+      "enginemt_qa",
+      "felm",
+      "fewshot_ttt_bbh",
+      "financebench",
+      "haiid",
+      "harmbench",
+      "healthadminbench",
+      "helm_afr",
+      "helm_bbq",
+      "helm_bold",
+      "helm_thaiexam",
+      "icpc2_code_selector",
+      "igakuqa",
+      "igakuqa119",
+      "ikp",
+      "jailbreakbench",
+      "judgetuning",
+      "kormedmcqa",
+      "legal_rag_bench",
+      "legalbench",
+      "lingoly",
+      "live_agent_risk",
+      "liveaopsbench",
+      "llm_bp_tag",
+      "llm_uncertainty_bench",
+      "mathconstraint",
+      "medhelm_ehr_sql",
+      "medhelm_head_qa",
+      "medhelm_med_mcqa",
+      "medhelm_med_qa",
+      "medhelm_medbullets",
+      "medhelm_medcalc_bench",
+      "medhelm_medec",
+      "medhelm_medhallu",
+      "medhelm_pubmed_qa",
+      "medhelm_race_based_med",
+      "mind2web",
+      "mmlu",
+      "mmoral_bench",
+      "monkey_power_laws",
+      "multi_swebench",
+      "mypcbench",
+      "naep_llm_students",
+      "nester",
+      "ood_prediction",
+      "pku_saferlhf",
+      "planbench",
+      "preference_dissection",
+      "proofaug",
+      "prox",
+      "real_webagents",
+      "researchcodebench",
+      "revolve",
+      "safeagentbench",
+      "software_world_models",
+      "sugarcrepe",
+      "swe_rebench",
+      "swe_smith",
+      "tensortrust",
+      "truthfulqa_mc",
+      "tulu_human_eval",
+      "visual_riddles",
+      "visualwebarena",
+      "weavebench",
+      "wikihow_agent",
+      "wmt_mqm",
+      "workarena",
+      "workbench_revisited"
+    ],
+    "benchmark_count": 105,
+    "candidate_response_rows": 55047908,
+    "sample_rows": 150000,
+    "sampling_seed": 0,
+    "mean_from_server_artifact_inspection": 0.5743583606802852,
+    "ensemble_weights": [
+      0.25,
+      0.375,
+      0.375
+    ],
+    "ridge_alpha": 100,
+    "ridge_solver": "lsqr",
+    "trees": 80,
+    "depth": 12,
+    "leaf_min": 20,
+    "tree_seed": 42
+  },
+  "budget_curve_1020550": {
+    "budgets": [
+      0,
+      1,
+      3,
+      7,
+      15,
+      31
+    ],
+    "brier": [
+      0.20880333333333334,
+      0.14365733333333333,
+      0.14016833333333334,
+      0.123155,
+      0.1221391111111111,
+      0.12809244444444445
+    ],
+    "weights": [
+      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.1
+    ],
+    "reconstructed_alc": 0.13951353333333333
+  },
+  "same_named_v10_observations": {
+    "observations": [
+      {
+        "submission_id": 1018663,
+        "score": 0.156288
+      },
+      {
+        "submission_id": 1020184,
+        "score": 0.201272
+      },
+      {
+        "submission_id": 1020550,
+        "score": 0.139514
+      },
+      {
+        "submission_id": 1020563,
+        "score": 0.218715
+      },
+      {
+        "submission_id": 1020962,
+        "score": 0.166623
+      },
+      {
+        "submission_id": 1021081,
+        "score": 0.189484
+      },
+      {
+        "submission_id": 1021083,
+        "score": 0.176881
+      },
+      {
+        "submission_id": 1020950,
+        "score": 0.212794
+      },
+      {
+        "submission_id": 1020922,
+        "score": 0.195047
+      }
+    ],
+    "count": 9,
+    "observed_mean": 0.18406866666666666,
+    "observed_min": 0.139514,
+    "observed_max": 0.218715,
+    "observed_range": 0.079201,
+    "sample_sd_descriptive_only": 0.026420198485249877
+  },
+  "package_check": {
+    "status": "PASS",
+    "checks": [
+      "isolated ZIP loading",
+      "6 label budgets",
+      "determinism",
+      "no input mutation",
+      "benchmark isolation",
+      "benchmark ID not a feature",
+      "long-text preprocessing parity",
+      "JSON attributes",
+      "label adaptation",
+      "missing fields"
+    ],
+    "100_call_seconds": 6.763198273954913
+  },
+  "requirements": "numpy==2.2.6\nscipy==1.15.3\nscikit-learn==1.7.2\njoblib==1.6.0\nthreadpoolctl==3.7.0\n",
+  "method_level_crossfit_only": {
+    "development_episodes": 698,
+    "development_benchmarks": 41,
+    "meta_tasks_excluding_original_five": 36,
+    "meta_episodes": 437,
+    "uncalibrated": [
+      0.1960278193468399,
+      0.19375441928137072
+    ],
+    "crossfit_calibration": [
+      0.1917483924108471,
+      0.19027522087997656
+    ],
+    "warning": "b refit per fold; these are not independent scores for the finalfixedb=-.5796672068 artifact."
+  },
+  "final_submission_requirements_source": "https://aims.stanford.edu/competition",
+  "missing": [
+    "teamauthorconfirmation",
+    "publiccodeandmodellinks",
+    "datasetrevisionandsamplemanifest",
+    "cleanfromscratchtrainingentry",
+    "NeurIPSPDFandOpenReviewsubmission"
+  ],
+  "not_disclosed_in_artifact": "No server password or private individualfeedback tables included."
+}

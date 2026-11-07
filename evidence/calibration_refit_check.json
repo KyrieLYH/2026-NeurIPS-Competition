@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "environment": "existing server pac environment; CPU; no package changes",
+  "parameters": {
+    "a": 1.0,
+    "b": -0.5796672067792444,
+    "loss": 0.23375083370787164,
+    "meta_episodes": 758
+  },
+  "public_benchmarks": 47,
+  "scope": "New convenience entry executed against original public prediction caches; no base retraining."
+}
